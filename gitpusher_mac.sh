@@ -15,7 +15,7 @@ elif [[ $# -eq 2 ]]
 			git commit -m "$1"
 			# Enter the absolute path of the text file 
 			# containing your Personal Access Token
-			pbcopy /absolute/path/to/your/file.txt
+			cat /absolute/path/to/your/file.txt | pbcopy
 			git pull origin $2
 			git push origin $2
 		else
